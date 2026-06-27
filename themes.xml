@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Calculator" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/green_accent</item>
+        <item name="colorPrimaryVariant">@color/button_equals_pressed</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/toolbar_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Normal calculator button -->
+    <style name="CalcButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:background">@drawable/btn_normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- Operator button (green text) -->
+    <style name="CalcButton.Operator">
+        <item name="android:textColor">@color/operator_text</item>
+        <item name="android:background">@drawable/btn_normal</item>
+    </style>
+
+    <!-- Clear button (green text) -->
+    <style name="CalcButton.Clear">
+        <item name="android:textColor">@color/button_clear_text</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@drawable/btn_normal</item>
+    </style>
+
+    <!-- Equals button (green bg) -->
+    <style name="CalcButton.Equals">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:background">@drawable/btn_equals</item>
+    </style>
+
+    <!-- Scientific function button (smaller text) -->
+    <style name="CalcButton.Sci">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:background">@drawable/btn_normal</item>
+    </style>
+</resources>
